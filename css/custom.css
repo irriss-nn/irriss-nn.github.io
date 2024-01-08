@@ -7,4 +7,65 @@
   * License: Themeforest Standard Licenses: https://themeforest.net/licenses
   */
 
-/*----------- ADD YOUR CUSTOM CSS STYLES BELOW -----------*/
+.home-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Flexible grid layout */
+    gap: 20px;
+    /* Space between boxes */
+    margin-top: 20px;
+    max-width: 800px;
+    /* Adjust width as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-box {
+    background-color: #f0f0f0;
+    /* Example background color */
+    padding: 40px;
+    /* Increased padding for larger box */
+    border-radius: 15px;
+    /* Rounded corners */
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    /* Center text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-box:hover {
+    transform: translateY(-5px);
+    /* Slight lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* Shadow effect on hover */
+}
+
+.home-box h2 {
+    font-size: 2rem;
+    /* Larger font size for headlines */
+    color: #333;
+    font-weight: bold;
+    /* Make it bold */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    /* Uppercase letters for style */
+    letter-spacing: 1.5px;
+    /* Spacing between letters */
+}
+
+.home-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* CSS for the last box to be centered if alone in the row */
+
+.home-box:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    /* Center the last box if it's the only one in the last row */
+}
