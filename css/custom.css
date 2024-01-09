@@ -1,71 +1,101 @@
 /*!
-  * Item: Kitzu
-  * Description: Personal Portfolio Template
-  * Author/Developer: Exill
-  * Author/Developer URL: https://themeforest.net/user/exill
-  * Version: v2.0.0
-  * License: Themeforest Standard Licenses: https://themeforest.net/licenses
-  */
+ * Enhanced CSS for the Home Section
+ * Item: Kitzu - Personal Portfolio Template
+ */
+
+
+/* Home Boxes Grid Layout */
 
 .home-boxes {
+    font-size: large;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* Flexible grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* More responsive grid */
     gap: 20px;
-    /* Space between boxes */
     margin-top: 20px;
     max-width: 800px;
-    /* Adjust width as needed */
     margin-left: auto;
     margin-right: auto;
 }
 
+
+/* Individual Home Box Styling */
+
 .home-box {
-    background-color: #f0f0f0;
-    /* Example background color */
-    padding: 40px;
-    /* Increased padding for larger box */
-    border-radius: 15px;
-    /* Rounded corners */
+    background: radial-gradient(circle, #0f0f0f 50%, #808080 100%);
+    /* Lighter shade for better readability */
+    padding: 30px;
+    /* Optimized padding */
+    border-radius: 10px;
+    /* Smoother corners */
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: all 0.3s ease-in-out;
+    /* Smoother transition for hover effects */
     text-align: center;
-    /* Center text */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
 }
+
+
+/* Hover Effect for Home Boxes */
 
 .home-box:hover {
-    transform: translateY(-5px);
-    /* Slight lift effect on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    /* Shadow effect on hover */
+    transform: scale(1.2);
+    /* Slight scale up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+/* Home Box Headings */
 
 .home-box h2 {
-    font-size: 2rem;
-    /* Larger font size for headlines */
+    font-size: 2.2rem;
+    /* Adjusted for better visibility */
     color: #333;
-    font-weight: bold;
-    /* Make it bold */
+    font-weight: 600;
+    /* Less bold for a modern look */
     margin-bottom: 15px;
+    /* Spacing below the heading */
     text-transform: uppercase;
-    /* Uppercase letters for style */
-    letter-spacing: 1.5px;
-    /* Spacing between letters */
+    letter-spacing: 1px;
+    /* Subtle letter spacing */
 }
+
+
+/* Home Box Paragraphs */
 
 .home-box p {
-    font-size: 1rem;
+    font-size: 2rem;
     color: #666;
+    margin-bottom: 15px;
+    /* Added bottom margin for spacing */
 }
 
 
-/* CSS for the last box to be centered if alone in the row */
+/* Responsive Design Adjustments */
+
+@media screen and (max-width: 768px) {
+    .home-boxes {
+        grid-template-columns: 1fr;
+        /* Single column layout for smaller screens */
+    }
+    .home-box {
+        padding: 20px;
+        /* Reduced padding on smaller screens */
+    }
+    .home-box h2 {
+        font-size: 1.6rem;
+        /* Slightly smaller font size for mobile */
+    }
+}
+
+
+/* Centering the Last Box if Alone in the Row */
 
 .home-box:last-child:nth-child(odd) {
     grid-column: 1 / -1;
-    /* Center the last box if it's the only one in the last row */
 }
