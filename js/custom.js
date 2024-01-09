@@ -20,7 +20,7 @@ document.getElementById('resume-box').addEventListener('click', function() {
 });
 
 document.getElementById('project-box').addEventListener('click', function() {
-    document.querySelector('a[href="#course"]').click();
+    document.querySelector('a[href="#project"]').click();
 });
 
 document.getElementById('contact-box').addEventListener('click', function() {
