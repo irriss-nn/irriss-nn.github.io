@@ -923,6 +923,13 @@ hr {
     margin-bottom: 0;
 }
 
+.home-area .fixed-wrapper .social-icons li i:hover {
+    color: #199d76;
+    /* Change to the desired shade of green */
+    transition: color 0.3s ease-in-out;
+    /* Smooth transition for the color change */
+}
+
 .home-area .fixed-wrapper .social-icons>li {
     line-height: 100%;
     margin-top: 14px;
@@ -1765,6 +1772,22 @@ hr {
 .blog-section .single-post .post-img {
     height: 100%;
     position: relative;
+}
+
+.blog-section .single-post .post-img:hover img {
+    transform: scale(1.1);
+    /* Adjust scale as needed */
+    transition: transform 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .blog-section .single-post .post-img:hover img {
+        transform: scale(1.1);
+        /* Adjust scale as needed */
+        transition: transform 0.3s ease-in-out;
+        /* Smooth transition */
+    }
 }
 
 .blog-section .single-post .post-img .content-date {
