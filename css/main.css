@@ -106,6 +106,26 @@ hr {
 
 /* Buttons */
 
+.btn:hover {
+    background-color: #3e8e41;
+    /* Darker green background for hover */
+    cursor: pointer;
+    /* Changes the cursor to a pointer to indicate it's clickable */
+    transform: scale(1.1);
+    /* Scales up the button to 110% of its size */
+    transition: transform 0.2s;
+}
+
+.clicked {
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    border: none;
+    /* No border */
+    /* You can add more styling effects as needed */
+}
+
 .button-main {
     background-color: #fff;
     border: 1px solid #fff;
@@ -1348,6 +1368,18 @@ hr {
 
 
 /* Resume: Resume */
+
+#experiences:hover,
+#skills:hover,
+#education:hover,
+#certificate:hover {
+    transform: scale(1.3);
+    /* Adjust the scale value as needed */
+    transition: transform 0.3s ease;
+    /* Smooth transition for the scaling effect */
+    z-index: 10;
+    /* Ensure the hovered section is above others */
+}
 
 .resume-section .col-block.education {
     margin-right: 20px;

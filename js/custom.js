@@ -7,6 +7,11 @@
  * License: Themeforest Standard Licenses: https://themeforest.net/licenses
  */
 
+document.getElementById("downloadButton").addEventListener("click", function() {
+    this.classList.add("clicked");
+    // Add more effects or changes as needed
+});
+
 document.getElementById('about-box').addEventListener('click', function() {
     document.querySelector('a[href="#about"]').click();
 });
@@ -26,6 +31,7 @@ document.getElementById('project-box').addEventListener('click', function() {
 document.getElementById('contact-box').addEventListener('click', function() {
     document.querySelector('a[href="#contact"]').click();
 });
+
 
 
 (function($) {
