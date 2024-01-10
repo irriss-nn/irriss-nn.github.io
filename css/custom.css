@@ -24,6 +24,8 @@
 .home-box {
     background: radial-gradient(circle, #0f0f0f 50%, #808080 100%);
     /* Lighter shade for better readability */
+    color: #cecece;
+    font-size: 16px;
     padding: 30px;
     /* Optimized padding */
     border-radius: 10px;
@@ -50,30 +52,19 @@
 }
 
 
-/* Home Box Headings */
+/* Additional Styling for Text Inside Home Box */
 
-.home-box h2 {
-    font-size: 2.2rem;
-    /* Adjusted for better visibility */
-    color: #333;
-    font-weight: 600;
-    /* Less bold for a modern look */
-    margin-bottom: 15px;
-    /* Spacing below the heading */
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    /* Subtle letter spacing */
-}
-
-
-/* Home Box Paragraphs */
-
+.home-box h2,
 .home-box p {
-    font-size: 2rem;
-    color: #666;
-    margin-bottom: 15px;
-    /* Added bottom margin for spacing */
+    font-size: 16px;
+    /* Ensures consistency for all text */
+    color: #cecece;
+    /* Ensures consistency for all text color */
+    /* Add any other text-specific styles here */
 }
+
+
+/* You can remove or adjust the previous .home-box h2 and .home-box p styles as needed */
 
 
 /* Responsive Design Adjustments */
