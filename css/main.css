@@ -1844,14 +1844,6 @@ hr {
     margin-bottom: 25px;
 }
 
-.lightbox-wrapper .img-fluid.img-thumbnail {
-    width: auto;
-    height: 50%;
-    /* This will maintain the aspect ratio */
-    margin: 0 auto;
-    /* This centers the image in the column */
-}
-
 .contact-section .contact-form .form-group .form-control:-webkit-autofill,
 .contact-section .contact-form .form-group .form-control:-webkit-autofill:hover,
 .contact-section .contact-form .form-group .form-control:-webkit-autofill:focus,
