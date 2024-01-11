@@ -15,6 +15,6 @@ I am actively looking for opportunities as a Junior Developer where I can contri
 Feel free to connect with me for any exciting project or opportunity:
 
 - **Email**: [weitong@ualberta.ca](mailto:weitong@ualberta.ca)
-- 
+
 
 Thank you for visiting my portfolio!
